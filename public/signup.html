@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Usuario</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br><br>
+
+    <center>
+        <form action="/register" method="POST">
+        <div class="login2 wrap">
+            <div class="h1">Registrar Usuario</div>
+            <input placeholder="Nombre" type="text" id="nombre" name="nombre">
+            <input placeholder="Apellido" type="text" id="apellido" name="apellido">
+            <input placeholder="fecha de Nacimiento" type="date" id="fechaNacimiento" name="fechaNacimiento">
+            <input placeholder="Pais" type="text" id="pais" name="pais">
+            <input
+                pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                placeholder="Email" type="text" id="username" name="username">
+            <input placeholder="Contraseña" type="password" id="password" name="password">
+
+            <div>
+                <input type="submit" value="Registrar" class="btn" >
+                <input type="button" class="btn" value="Iniciar Sesión" onclick="location.href='index.html'">
+            </div>
+
+
+        </div>
+        </form>
+    </center>
+
+
+</body>
+</html>
